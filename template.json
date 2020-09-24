@@ -1,0 +1,18 @@
+{
+  "name": "deno-kotlin",
+  "repository": "https://github.com/tgm-templates/deno-kotlin",
+  "description": "Deno development with Kotlin",
+  "variables": [
+    {
+      "name": "group",
+      "description": "Gradle group"
+    },
+    {
+      "name": "appName",
+      "description": "App name"
+    }
+  ],
+  "files": [
+    "build.gradle.kts","settings.gradle.kts","README.md","justfile"
+  ]
+}
