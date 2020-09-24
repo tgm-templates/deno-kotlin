@@ -1,7 +1,7 @@
 {
   "name": "deno-kotlin",
   "repository": "https://github.com/tgm-templates/deno-kotlin",
-  "description": "Deno development with Kotlin",
+  "description": "Deno app development with Kotlin",
   "variables": [
     {
       "name": "group",
