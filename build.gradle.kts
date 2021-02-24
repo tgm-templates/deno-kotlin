@@ -1,5 +1,5 @@
 plugins {
-  kotlin("js") version "1.4.0"
+  kotlin("js") version "1.4.30"
   id("deno-plugin")
 }
 
@@ -16,8 +16,7 @@ dependencies {
 }
 
 kotlin {
-  //js(IR)
-  js {
+  js(IR) {
     useCommonJs()
     binaries.executable()
     nodejs()
