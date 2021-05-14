@@ -32,14 +32,14 @@ $ deno run --no-check build/deno/@appName@.js
 * add dependency in build.gradle.kts
 
 ```
-implementation("org.jetbrains.kotlinx", "kotlinx-coroutines-core", "1.3.9")
+implementation("org.jetbrains.kotlinx", "kotlinx-coroutines-core", "1.5.0")
 ```
 
 * Add kotlinx-coroutines-core import in templates.js
 
 ```javascript
-import Kotlin from "https://jspm.dev/kotlin@1.4.0"
-import KotlinxCoroutinesCore from "https://jspm.dev/kotlinx-coroutines-core@1.3.9"
+import Kotlin from "https://jspm.dev/kotlin@1.5.0"
+import KotlinxCoroutinesCore from "https://jspm.dev/kotlinx-coroutines-core@1.5.0"
 
 //......
 
