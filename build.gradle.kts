@@ -1,5 +1,5 @@
 plugins {
-  kotlin("js") version "1.4.30"
+  kotlin("js") version "1.5.0"
   id("deno-plugin")
 }
 
@@ -11,7 +11,7 @@ repositories {
 }
 
 dependencies {
-  implementation("org.jetbrains.kotlinx", "kotlinx-coroutines-core", "1.4.3")
+  implementation("org.jetbrains.kotlinx", "kotlinx-coroutines-core", "1.5.0")
   testImplementation(kotlin("test-js"))
 }
 
