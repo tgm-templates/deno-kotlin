@@ -1,5 +1,5 @@
-import Kotlin from "https://jspm.dev/kotlin@1.5.0"
-import KotlinxCoroutinesCore from "https://jspm.dev/kotlinx-coroutines-core@1.5.0"
+import Kotlin from "https://jspm.dev/kotlin@1.5.20"
+import KotlinxCoroutinesCore from "https://jspm.dev/kotlinx-coroutines-core@1.5.1"
 
 //===== global imports ===========
 //deps.js
