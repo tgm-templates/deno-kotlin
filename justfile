@@ -1,14 +1,11 @@
 build:
-  ./gradlew deno
+  ./gradlew -x browserTest clean browserDistribution
 
-run:
-  deno run --allow-read --no-check build/deno/@appName@.js
+release:
+  ./gradlew -x browserTest clean browserProductionWebpack
 
-watch:
-  deno run --unstable --watch --allow-read --no-check build/deno/@appName@.js
-
-generate:
-  dukat -d src/main/kotlin/deno src/main/kotlin/deno/lib.deno.d.ts
+run-bundle:
+  deno run -A build/distributions/bundle.js
 
 setup:
   brew install deno
