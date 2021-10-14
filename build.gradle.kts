@@ -1,6 +1,5 @@
 plugins {
-  kotlin("js") version "1.5.30"
-  id("deno-plugin")
+  kotlin("js") version "1.5.31"
 }
 
 group = "@group@"
@@ -17,17 +16,14 @@ dependencies {
 
 kotlin {
   js(IR) {
-    useCommonJs()
     binaries.executable()
-    nodejs()
+    browser {
+      webpackTask {
+        outputFileName = "bundle.js"
+        output.libraryTarget = "global"
+        output.globalObject = "globalThis"
+      }
+    }
   }
 }
 
-tasks {
-  //task from buildSrc
-  register<org.mvnsearch.DenoTask>("deno") {
-    dependsOn("mainClasses")
-    group = "Deno"
-    description = "Build Deno file from Kotlin"
-  }
-}
