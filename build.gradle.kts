@@ -1,5 +1,5 @@
 plugins {
-  kotlin("js") version "1.5.31"
+  kotlin("js") version "1.6.0"
 }
 
 group = "@group@"
@@ -10,7 +10,7 @@ repositories {
 }
 
 dependencies {
-  implementation("org.jetbrains.kotlinx", "kotlinx-coroutines-core", "1.5.2")
+  implementation("org.jetbrains.kotlinx", "kotlinx-coroutines-core", "1.6.0")
   testImplementation(kotlin("test-js"))
 }
 
